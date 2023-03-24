@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% block content%}
+<html>
+    <head><title>Login Page</title></head>
+<body>
+<section class="container">
+    <div class="row">
+        <div class="col">
+            <form action="" method="POST">
+                <p> 
+                 {{form.email.label}}<br>
+                 {{form.email(size=32)}}
+                </p>
+                <p>
+                    {{form.password.label}}<br>
+                    {{form.password(size=32)}}
+                </p>
+                <p> {{form.submit()}}</p>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+{%endblock%}
+
